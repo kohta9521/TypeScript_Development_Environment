@@ -11,7 +11,7 @@ const user = {
   age: 20
 }
 
-const name = input ? input : "名無し";
+// const name = input ? input : "名無し";
 const sample2 = {
   name,
   age: 20,
