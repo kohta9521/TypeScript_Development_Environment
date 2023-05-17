@@ -1,8 +1,8 @@
-// 関数宣言で関数を作成
+// 関数宣言で関数を作る
 function range(min: number, max: number): number[] {
-  const result = [];
+  const result  = [];
   for (let i = min; i <= max; i ++) {
-    // result.push(i);
+    result.push(i);
   }
   return result;
 }
