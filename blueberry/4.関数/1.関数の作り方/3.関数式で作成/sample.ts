@@ -1,5 +1,4 @@
-
-// 関数式
+// 関数式で関数を作る
 type Human = {
   height: number;
   weight: number;
@@ -8,7 +7,6 @@ type Human = {
 const calcBMI = function(human: Human): number {
   return human.weight / human.height ** 2;
 };
-
 
 const uhyo: Human = { height: 1.84, weight: 72 };
 console.log(calcBMI(uhyo))
