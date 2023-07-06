@@ -1,5 +1,5 @@
 // recieveWeatherIngo関数をimport
-import { recieveWeatherIngo } from "./weatheringo-reciever";
+// import { recieveWeatherIngo } from "./weatheringo-reciever";
 
 const weatheringoUrl = "https://api.openweathermap.org/data/3.0/weather";
 const params: {
@@ -15,4 +15,4 @@ const params: {
 
 const queryParams = new URLSearchParams(params);
 const urlFull = `${weatheringoUrl}?${queryParams}`;
-recieveWeatherIngo(urlFull);
+// recieveWeatherIngo(urlFull);
