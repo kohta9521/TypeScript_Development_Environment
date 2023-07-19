@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import CleanUp from './CleanUp';
 
 const App: React.FC = () => {
 
@@ -12,6 +13,8 @@ const App: React.FC = () => {
   }
 
   const [ counter, setCounter ] = useState(0);
+
+  const [ display, setDisplay ] = useState(true);
 
   useEffect(() => {
     console.log("useEffect in App component invoked !");
@@ -28,10 +31,13 @@ const App: React.FC = () => {
 
         <h4>{counter}</h4>
         <button onClick={() => setCounter((preCounter) => preCounter + 1)}>Increment</button>
+        {display && <CleanUp />}
+        <button onClick={() => setDisplay(!display)}>Toggle display!</button>
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+
         <span>
           <span>Learn </span>
           <a
