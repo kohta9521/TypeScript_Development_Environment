@@ -13,6 +13,8 @@ const App: React.FC = () => {
 
   const [ counter, setCounter ] = useState(0);
 
+  const [ display, setDisplay ] = useState(true);
+
   useEffect(() => {
     console.log("useEffect in App component invoked !");
     document.title = `current value is ${counter}`
@@ -32,6 +34,7 @@ const App: React.FC = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+
         <span>
           <span>Learn </span>
           <a
